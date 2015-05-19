@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    tools:context="com.iconasystems.christo.baalafinal.MainActivity">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/logo"
+        android:src="@drawable/logo"
+        android:layout_below="@+id/brand_name"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="50sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Baala"
+        android:id="@+id/brand_name"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/terms_clause"
+        android:textColor="@android:color/black"
+        android:id="@+id/terms_and_condition"
+        android:textSize="10sp"
+        android:padding="3dp"
+        android:gravity="center"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/googleAuth"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/terms_and_condition" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_button"
+        android:text="Create Account"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:id="@+id/register_button"
+        android:layout_above="@+id/googleAuth"
+        android:layout_alignLeft="@+id/googleAuth"
+        android:layout_alignStart="@+id/googleAuth" />
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_button"
+        android:text="Sign In"
+        android:textColor="@android:color/white"
+        android:id="@+id/sign_in_button"
+        android:layout_above="@+id/googleAuth"
+        android:layout_alignRight="@+id/googleAuth"
+        android:layout_alignEnd="@+id/googleAuth" />
+</RelativeLayout>

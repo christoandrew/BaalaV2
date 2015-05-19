@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bar_list_background"
+    android:layout_height="250dp">
+
+    <ImageView
+        android:id="@+id/bar_photo"
+        android:layout_width="fill_parent"
+        android:src="@drawable/panamera_bar"
+        android:scaleType="centerCrop"
+        android:layout_height="300dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/bar_list_id"
+        android:layout_below="@+id/bar_name_list"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:padding="10dp"
+        android:textColor="#FF8A13"
+        android:background="#99000000"
+        android:text="The Bar"
+
+        android:textSize="40sp"
+        android:id="@+id/bar_list_name"
+        android:layout_below="@+id/bar_list_id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Even when there is pain i will always be there"
+        android:singleLine="true"
+        android:textSize="25sp"
+        android:textColor="@color/tab_pageIndicator_text"
+        android:id="@+id/description"
+        android:background="#99000000"
+        android:padding="10dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/bar_list_id"
+        android:layout_toEndOf="@+id/bar_list_id" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_icon"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_action_new"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:textColor="@color/white"
+        android:id="@+id/status"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/new_icon"
+        android:layout_toEndOf="@+id/new_icon" />
+</RelativeLayout>

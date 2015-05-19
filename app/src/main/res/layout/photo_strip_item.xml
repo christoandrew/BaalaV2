@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:id="@+id/photo_strip_image"
+        android:src="@drawable/panamera"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="The bar name"
+        android:gravity="center"
+        android:id="@+id/photo_strip_tag"
+        android:layout_alignRight="@+id/photo_strip_image"
+        android:layout_alignEnd="@+id/photo_strip_image"
+        android:layout_below="@+id/photo_strip_image"
+        android:layout_alignLeft="@+id/photo_strip_image"
+        android:layout_alignStart="@+id/photo_strip_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/photo_strip_bar_id"
+        android:visibility="gone"
+        android:layout_below="@+id/photo_strip_image"
+        android:layout_alignRight="@+id/photo_strip_image"
+        android:layout_alignEnd="@+id/photo_strip_image" />
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:layout_marginBottom="40dp"
+>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar 				ultricies, purus lectus malesuada libero, sit amet commodo"
+        android:id="@+id/bar_review"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="1990-01-01"
+        android:layout_marginRight="10dp"
+        android:id="@+id/date_reviewed"
+        android:layout_below="@+id/bar_review"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="christoandrew"
+        android:id="@+id/bar_reviewer"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_alignBottom="@+id/date_reviewed"
+        android:layout_toLeftOf="@+id/date_reviewed"
+        android:layout_toStartOf="@+id/date_reviewed" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="by"
+        android:layout_marginRight="2dp"
+        android:layout_alignBottom="@+id/bar_reviewer"
+        android:layout_toLeftOf="@+id/bar_reviewer"
+        android:layout_toStartOf="@+id/bar_reviewer" />
+    <TextView
+        android:layout_below="@+id/bar_reviewer"
+        android:id="@+id/review_id"
+        android:layout_marginBottom="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/fill"
+
+        android:layout_below="@+id/bar_reviewer"
+        android:layout_toRightOf="@+id/review_id"
+        android:layout_toEndOf="@+id/review_id" />
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="4dp"
+    android:background="@drawable/event_back"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/panamera"
+        android:id="@+id/event_list_image" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Reggae Night with Dj Switch"
+        android:id="@+id/event_list_name"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/event_list_image"
+        android:layout_toEndOf="@+id/event_list_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="19-12-2014"
+        android:id="@+id/event_list_date"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Location:"
+        android:id="@+id/event_list_location_label"
+        android:layout_below="@+id/event_list_name"
+        android:layout_alignLeft="@+id/event_list_name"
+        android:layout_alignStart="@+id/event_list_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Dress Code:"
+        android:id="@+id/event_list_dress_code_label"
+        android:layout_below="@+id/event_list_location_label"
+        android:layout_alignLeft="@+id/event_list_location_label"
+        android:layout_alignStart="@+id/event_list_location_label" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Entrance:"
+        android:id="@+id/event_list_entrance_label"
+        android:layout_below="@+id/event_list_dress_code_label"
+        android:layout_alignLeft="@+id/event_list_dress_code_label"
+        android:layout_alignStart="@+id/event_list_dress_code_label" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Panamera Bar"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/event_list_location"
+        android:layout_above="@+id/event_list_dress_code_label"
+        android:layout_toRightOf="@+id/event_list_entrance_label"
+        android:layout_toEndOf="@+id/event_list_entrance_label" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Bikinis And Shorts"
+        android:id="@+id/event_list_dress_code"
+        android:layout_marginLeft="5dp"
+        android:layout_alignBottom="@+id/event_list_dress_code_label"
+        android:layout_toRightOf="@+id/event_list_dress_code_label"
+        android:layout_toEndOf="@+id/event_list_dress_code_label" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Free"
+        android:id="@+id/event_list_entrance"
+        android:layout_alignBottom="@+id/event_list_entrance_label"
+        android:layout_alignLeft="@+id/event_list_location"
+        android:layout_alignStart="@+id/event_list_location" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/free_label"
+        android:src="@drawable/ic_action_free"
+        android:layout_below="@+id/event_list_dress_code"
+        android:layout_alignRight="@+id/event_list_date"
+        android:layout_alignEnd="@+id/event_list_date" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/event_list_id" />
+
+</RelativeLayout>

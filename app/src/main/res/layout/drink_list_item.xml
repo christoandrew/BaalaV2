@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/drink_id"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:id="@+id/beer_photo"
+        android:src="@drawable/ic_action_error"
+        android:layout_margin="6dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Drink Name Here"
+        android:id="@+id/drink_name"
+        android:textSize="22sp"
+        android:layout_alignTop="@+id/beer_photo"
+        android:layout_toRightOf="@+id/beer_photo"
+        android:layout_toEndOf="@+id/beer_photo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Price : "
+        android:layout_marginBottom="30dp"
+        android:id="@+id/drink_description"
+        android:layout_alignLeft="@+id/drink_name"
+        android:layout_alignStart="@+id/drink_name"
+        android:layout_alignBottom="@+id/beer_photo"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/drink_price"
+        android:text="5000"
+        android:layout_alignBottom="@+id/drink_description"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/price_tag"
+        android:src="@drawable/ic_action_tag"
+        android:layout_alignTop="@+id/drink_price"
+        android:layout_toLeftOf="@+id/drink_price"
+        android:layout_toStartOf="@+id/drink_price" />
+
+</RelativeLayout>

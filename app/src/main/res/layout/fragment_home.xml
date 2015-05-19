@@ -1,0 +1,83 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:background="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/divider"
+        tools:context="com.iconasystems.christo.baalafinal.HomeFragment">
+
+        <fragment
+            android:id="@+id/current_location"
+            android:tag="current_location"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/nearby_strip"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/white"
+            android:layout_below="@+id/current_location"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Near You"
+                android:layout_margin="10dp"
+                android:textSize="18sp"
+                android:id="@+id/nearby_label" />
+
+            <org.lucasr.twowayview.widget.TwoWayView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/two_way_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:twowayview_layoutManager="ListLayoutManager"
+                style="@style/StyleView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/happening_label_strip"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_below="@+id/nearby_strip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Whats Happening"
+                android:layout_margin="10dp"
+                android:textSize="18sp"
+                android:id="@+id/happening_label" />
+
+            <ListView
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_view_event"
+                android:background="@color/divider"
+                android:padding="5dp"
+                android:dividerHeight="4dp"
+                android:divider="@color/divider"
+                android:layout_below="@+id/happening_label_strip"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+
